@@ -1,0 +1,8 @@
+1.파일명->Login.html 저장
+2.<center>태그 사용
+3.form태그
+   아이디 name="id"
+   비밀번호 name="pwd"
+4.버튼 둘다 일반버튼
+5.테이블태그+input box
+tr td 2x4

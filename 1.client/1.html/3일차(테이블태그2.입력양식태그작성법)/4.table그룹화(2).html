@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.table그룹화(2).html</title>
+</head>
+<body>
+    <!--
+        colgroup=>직접적으로 thead에 있는  tr에 스타일을 적용X
+                         따로 thead앞에 colgroup태그=>속성을 이용=>적용O
+                         column(컬럼값)
+                         style=적용시킬 속성명: 값;속성명2:값2~ 인라인방식의 css
+                         www.jspstudy.co.kr(jsp 공부사이트)
+    -->
+    <center>
+            <table border="1">
+                <!--colgroup  colgroup>col*3-->
+                <colgroup>
+                    <col width="50px" style="background:red">
+                    <col width="200px" style="background:burlywood">
+                    <col width="100px" style="background:greenyellow">
+                </colgroup>
+                <thead> <!--머리말-->
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>이름</th>
+                    </tr>
+                </thead>
+                
+                <tbody> <!--본문 최소 한개이상의 tr존재-->
+                    <tr>
+                        <td>1</td>
+                        <td>colgroup의 이해</td>
+                        <td>홍길동</td>
+                    </tr>
+                </tbody>
+                            
+                </thead>
+            </table>
+
+
+    </center>
+
+</body>
+</html>

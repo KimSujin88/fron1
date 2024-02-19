@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let year = [
+            [
+                ["미역국", "잡채", "불고기", "소떡소떡", "치킨", "피자","햄버거"],
+                ["케이크", "탕후루", "핫케이크", "소떡소떡", "치킨", "피자","햄버거"],
+                ["김치찌개", "된장국", "스팸마요덮밥", "소떡소떡", "치킨", "피자","햄버거"]
+            ],
+            [
+                ["계란말이", "고구마치즈돈까스", "주먹밥", "소떡소떡", "치킨", "피자","햄버거"],
+                ["샐러드", "오므라이스", "엽떡", "소떡소떡", "치킨", "피자","햄버거"],
+                ["양고기", "고기", "스시", "소떡소떡", "치킨", "피자","햄버거"]
+            ]
+]
+
+        //면, 행, 열
+        for(let  i=0; i< 2 ; i++){
+            //면
+            console.log( i+1 +"month") ;
+            for( let j=0; j<3 ; j++ ){
+                //행
+                console.log( j+1 +"주");
+                for( let k=0; k<7; k++){
+                    //열
+                    console.log(  year[i][j][k]);
+                }
+            }
+        }
+
+
+    </script>
+</body>
+</html>

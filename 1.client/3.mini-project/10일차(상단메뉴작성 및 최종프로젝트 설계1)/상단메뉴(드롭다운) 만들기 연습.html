@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상단메뉴(드롭다운) 만들기 연습.html</title>
+    <style>
+        .dropdownmenu>li{
+            float: left;
+            position: relative;
+            background: pink;
+            width: 25%;
+            height: 50px;
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 25px;
+        }
+        .dropdownmenu>li:hover{
+            background-color: rgb(235, 209, 224);
+        }
+
+        .dropdownmenu ul{
+            position: relative;
+            top:-1000px;
+        }
+        body,ul{
+            margin: 0;
+            s
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+       a{
+            text-decoration: none;
+            color: purple;
+            font-weight: bolder;
+        }
+      
+    </style>
+
+</head>
+<body>
+    <!-- 왼쪽에서 오른쪽으로 펼치는것? float:left;
+        hover -->
+    <ul class="dropdownmenu">
+        <li><a href="#">김수진</a></li>
+        <li><a href="#">임근석</a>
+        <!-- 여기에 2단계 트리구조 -->
+            <ul>
+                <li><a href="#">배드민턴</a>
+                <!-- 3단계 트리구조 -->
+                    <ul>
+                        <li><a href="#">띠모임</a></li>
+                        <li><a href="#">발산클럽</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">크로스핏</a></li>
+                <li><a href="#">골프</a></li>
+            </ul>
+        
+        </li>
+
+        <li><a href="#">임세아</a></li>
+        <li><a href="#">임선희</a></li>
+    </ul>
+</body>
+</html>

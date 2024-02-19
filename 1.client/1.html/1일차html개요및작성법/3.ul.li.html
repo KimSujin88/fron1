@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><ul class="li html"></ul></title>
+</head>
+<body>
+    <!--
+        1.순서가 없는 목록=>ul(unorder list)=>상단메뉴 작성
+          type="disk"(디폴트)   square(네모), circle(원)
+        2.순서가 있는 목록=>ol(order list)
+          type="1"(디폴트)(숫자) 로마자 기호(I) II. III
+                                     A(대문자) a(소문자)
+        3.정의 목록 =>dl 태그>dt>dd
+          태그명>태그명2(ol)>태그명3(li)
+
+    -->
+    <h3>목록보기 예제</h3>
+    <ul type="circle">
+        <li>화면구현</li>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript
+        </li>
+    </ul>
+    <!--
+        1.공백을 인식=>특수기호 &nbsp;
+          태그->블록계열의 태그=>자동으로 줄바꿈이 일어남 ->br(x)
+                   인라인계열의 태그=>자동X 수동으로 줄바꿈 <br>태그를 사용
+        2.< &lt;  > =>&gt;
+
+
+    -->
+
+    <ol type="A">
+        <li>&lt;h1&gt;Java&lt;/h1&gt;</li>
+        <li>Web &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      Programming</li>
+        <li>Soring</li>
+    </ol>
+    <hr>
+        <!--게시판을 작성할때 여러줄을 입력받아서 출력할때 필수 태그-->
+       <pre>
+        <h3>
+             html문서에서 중간에 공백을 줄때
+                            중간에 이렇게 써도 공백을 인식 가능         하는지
+                    확인 바랍니다.
+        </h3>
+       </pre>
+    <hr>
+    <!--
+        정의 리스트(용어,설명)을 하나의 아이템으로 나열하는 리스트
+           dl->정의 리스트 전체
+           dt->각 아이템에서 용어사용시
+           dd->각 아이템에서 설명사용시
+    -->
+    <dl>
+        <dt><b>Internet Edge</b></dt>
+        <dd>마이크로소프트사에서 만든 브라우저로 현재 국내에서 가장 많이 사용</dd>
+        <dt>Chrome</dt><!--태그명+태그명2-->
+        <dd>구글에서 만든것으로 좋은 디버거를 갖추고 있어서 자바스크립트 에러잡을때 유용하다</dd>
+    </dl>
+  
+</body>
+</html>

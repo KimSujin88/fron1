@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.CSS의 boxmodel</title>
+    <style>
+           ul{
+            background: green;
+            /* margin(바깥여백)  padding(안쪽여백) */
+            margin:10px 20px 30px 40px;/* top(상)->right(오른쪽)->bottom(하)->left(왼쪽) */
+               /*   형식) 상위속성명-하위속성명-하위속성명2
+                margin-top:10px;(바깥여백의 상단)
+                margin-right:20px;(바깥여백의 우측)
+                margin-bottom:30px;(바깥여백의 하단)
+                margin-left:40px;(바깥여백의 좌측)
+               */
+               padding:50px; /*top->right->bottom->left*/
+               /*
+               padding-top:50px;(안쪽여백 상단)
+               padding-right:50px;(안쪽여백 우측)
+               padding-bottom:50px;(안쪽여백 하단)
+               padding-left:50px;(안쪽여백 좌측)
+               */
+           }
+           li{
+               color:red;
+               list-style:none; /*마크를 없애는 속성*/
+               background: yellow;
+               margin:30px; /* li태그의 바깥여백=ul태그의 안쪽여백(padding) 50+30=80px */
+               padding:30px; /* li태그의 안쪽여백=글자와 li태그사이의 거리(=테이블의 cellpadding과 비슷) */ 
+           }
+           li.withborder{   /*class선택자를 .으로 표시*/
+               /*
+               border(상위속성)-하위속성
+               border:double medium red;
+               */
+               border-style:outset; /* 선의 종류 solid(실선), double(이중선). 
+               dotted(점선) dashed(점선이 굵은느낌) inset(좌측,상단 진한선), outset(우측,하단 진한선) */
+               border-width:15px; /* 테두리의 크기를 지정 */
+               border-color:red; /* 테두리의 색깔 */
+           }
+
+
+    </style>
+</head>
+<body>
+    <!--ul>li*2-->
+    <ul>
+        <li>테두리가 없는 경우</li>
+        <li class="withborder">테두리가 있는 경우</li>
+    </ul>
+</body>
+</html>

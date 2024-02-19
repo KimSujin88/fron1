@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글삭제</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+        body{
+            background: #e0ffff;
+            text-align: center;
+        }
+        table{
+            width: 360px;
+            background: #e0ffff;
+            border: 1px solid black;
+            border-collapse: collapse; /*이중선 제거*/
+            margin: 0 auto;
+        }
+        tr{
+            height: 30px;
+            text-align: center;
+        }
+        td{
+            border: 1px solid black;
+            background: #b0e0e6;
+        }
+    </style>
+</head>
+<body> <!--form>table>tr*3>td*2-->
+    <span style="font-weight: 900; color: blueviolet">글삭제</span>
+    <form name="delForm" action="#" onsubmit="">
+        <table>
+            <tr>
+                <td style="font-weight: bolder;" colspan="2">비밀번호를 입력해 주세요.</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td style="background: #e0ffff;" colspan="2">
+                    비밀번호:<input type="password" name="pwd" size="8" maxlength="10">
+                </td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td style="text-align: center;" colspan="2">
+                   <input type="submit" value="글삭제">
+                   <input type="button" value="글목록" onclick="document.location='list.html'">
+                </td>
+                <!-- <td></td> -->
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

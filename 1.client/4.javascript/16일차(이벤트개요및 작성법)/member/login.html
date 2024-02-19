@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인창</title>
+    <link href="style.css" rel="stylesheet" class="text/css">
+    <style>
+        /* 공통 스타일시트->1.파일로 불러오기
+        2.특정페이지에서 사용하는 경우->style태그를 사용해서 적용시키기
+        */
+        body{
+            text-align: center;
+            background-color: #FFFFCC;
+        }
+        table{
+            /*
+                border:1px solid black; 영역을 잡아줄 테두리 보여주기위해서(임시)
+                margin-left:230px;
+            */
+            margin: 0 auto;
+        }
+    </style>
+    <script src="script.js"></script>
+    <!-- 
+        2번째 객체생성구문
+        window.onload=function(){//윈도우를 읽어들일때
+            document.login.mem_id.focus();
+            동일한 구문 =<body onload="document.login.mem_id.focus()"
+        }
+
+        onkeydown=>모든 키에 대해서 누르면 반응하는 이벤트종류
+        onkeypress=>문서작성할때 누르는 키에 한정(enter,esc,space)
+        onkeyup=>누른키를 손에서 뗀경우 발생
+
+
+        내부적으로 발생되는 이벤트 순서=>keydown->keypress->keyup
+        caller(event) ->worker
+          브라우저가 html문서를 읽어들이면서 자동적으로 event객체를 자동으로 함수에게 전달
+
+          event객체(눈에 보이지않는 객체)=>마우스 작업(오른쪽버튼 클릭),클릭한 좌표값의 정보,특정키의 정보를 가지고 있는 객체
+          enter->13(keyCode)
+     -->
+     <script>
+        function move_pass(){
+            if(event.keyCode==13) {//enter를 쳤다면
+                document.login.mem_passwd.focus();//커서 넣어달라는 함수
+            }
+        }
+
+        function move_id(){
+            if(event.keyCode==13){
+                document.login.mem_id.focus();
+            }
+        }
+
+     </script>
+</head>
+<body onload="document.login.mem_id.focus()">
+    <!--
+        디자인=>table+input box(form)
+            table>tr*4>td*2
+    -->
+     <!--<center>-->
+            <table><!--form:post-->
+                 <form name="login" action="Loginproc.jsp" method="post">
+                <tr> <!--로그인 타이틀명 h4{출력문자열}-->
+                    <td align="center" colspan="2"><h4>로그인</h4></td>
+                    <!--<td></td>-->
+                </tr>
+                <tr> <!--아이디 input:text
+                           label태그를 사용해서 레이블명과 입력박스를 연결시키는 방법
+                           형식)<label label for="연결시킬 id값"레이블명</label>
+                        -->
+                    <td><label for="">아이디</label></td>
+                    <td><input type="text" name="mem_id" id="id" onkeydown="move_pass()"></td>
+                </tr>
+                <tr><!--비번 input:password-->
+                    <td>비밀번호</td>
+                    <td><input type="password" name="mem_passwd" onkeydown="move_id()"></td>
+                </tr>
+                <tr><!--정가운데 버튼 2개 배치 input:button 나머지 td영역까지 포함해서 가운데 배치-->
+                    <td align="center" colspan="2">
+                        <input type="button" value="로그인" onclick="loginCheck()">&nbsp;
+                        <input type="button" value="회원가입" onclick="document.location='agreement.html'">
+                    </td>
+                    <!--<td align="center"><input type="button" value="회원가입"></td>-->
+                    
+                </tr>
+                </form>
+            </table>
+           
+                                        <!--table>tr*2>td*4-->
+         <!--</center>-->    
+</body>
+</html>

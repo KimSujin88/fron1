@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8.startest2.html</title>
+</head>
+<body>
+    <script>
+        /*
+          ****** or 세로 방향 document.write("*"+"<br>"); 하나의 for문을 써야 된다.
+          규칙성=>이중 for문 행1=>별1
+                            행2=>별2
+                            a=b
+          *
+          **
+          ***
+          ****
+          *****
+          ******
+          *******
+
+          a=1  b<=a
+               1<=1=>2<=1(X)
+
+          a=2  1<=2(a)->2<=2=>3<=2(X)
+
+          a=3  1<=3(a)->2<=2=>3<=3<=3=>4<=3(x)
+
+          a=4  1<=4->2<=4=>3<=4,4<=4,5<=4(X)
+
+          a=5  1<=5,2<=5,3<=5,4<=5,5<=5,6<=5(X)
+
+          a=6  1<=6,2<=6,3<=6,4<=6,5<=6,6<=6,7<=6(X)
+
+          a=7  1<=7,2<=7,3<=7,4<=7,5<=7,6<=7,7<=7,8<=7(X)
+
+
+          */
+         //    1)   2)    9)a=2
+       for(let a=1;a<=7;a++) {//1행~7행
+          //   3)       4)  7)  6)b=2
+          for(let b=1;b<=a;b++){ 
+            document.write("*");// 5)
+          }
+          document.write("<br>");//줄바꿈 8)
+       }
+    </script>
+</body>
+</html>

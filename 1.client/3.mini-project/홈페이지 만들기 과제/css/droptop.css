@@ -1,0 +1,69 @@
+/* 
+기능:드롭다운 상단메뉴 스타일 적용
+작성자:김수진
+작성날짜:2024.01.14
+*/
+
+.dropdownmenu > li{ 
+    float:left;  
+    position: relative; 
+    background: pink;
+    width: 25%; 
+}
+.dropdownmenu > li > a{
+    display: block; 
+    font-size: 16px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    height:60px; 
+    line-height: 60px;
+}
+
+.dropdownmenu > li:hover{
+    background: hotpink;
+}
+
+.dropdownmenu > li:hover > ul{
+    left:0; 
+    top: 60px; 
+}
+
+.dropdownmenu ul{
+    position:absolute; 
+    top: -9999px; 
+    z-index:9999; 
+    width: 160px; 
+    border:1px solid #cccccc;
+}
+
+.dropdownmenu ul li { 
+    position: relative; 
+}
+
+.dropdownmenu ul a{ 
+    display: block;
+    color: #aaaaaa;
+    font-size:12px;
+    background: #ffffff;
+    line-height: 40px; 
+    padding-left: 20px; 
+}
+
+.dropdownmenu ul a:hover{
+    color: #ffffff;
+    background:hotpink;
+}
+
+.dropdownmenu ul li:hover > ul{
+    position: absolute; 
+    top:0; 
+    left:100%; 
+}
+
+body,ul{ 
+    margin: 0; 
+    padding: 0;
+}
+ul{list-style: none;} 
+a{text-decoration: none;} 

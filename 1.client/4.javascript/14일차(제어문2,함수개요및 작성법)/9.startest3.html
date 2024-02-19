@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9.startest.html</title>
+</head>
+<body>
+    <script>
+        /*
+          ****** or 세로 방향 document.write("*"+"<br>"); 하나의 for문을 써야 된다.
+          규칙성=>이중 for문 행1=>별1
+                            행2=>별2
+                            a=b
+        
+        1.별이 한개씩 감소
+        2.별의 초기값 7
+          *******
+          ******
+          *****
+          ****
+          ***
+          **
+          *
+
+          */
+         //    1)   2)    9)a=2
+       for(let a=1;a<=7;a++) {//1행~7행
+          //   3)       4)  7)  6)b=2
+          for(let b=7;b>=a;b--){ 
+            document.write("*");// 5)
+          }
+          document.write("<br>");//줄바꿈 8)
+       }
+    </script>
+</body>
+</html>

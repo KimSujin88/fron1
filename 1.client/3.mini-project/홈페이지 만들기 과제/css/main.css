@@ -1,0 +1,244 @@
+/* 
+파일명:main.css
+기능:pc상태에서 보여주는 스타일시트 화면용
+작성날짜:2024년 01월 14일
+작성자:김수진
+*/
+
+.wrap{
+    width: 1180px;
+    margin: 0 auto; 
+}
+
+.cycle-slideshow{
+    position: relative; 
+    top:100px; 
+    z-index: 1;
+}
+.cycle-slideshow img{
+    height: 300px; 
+    margin: 0 auto;
+}
+
+.nv2{
+    width: 14%; 
+    height: 50px; 
+    border: 1px solid hotpink;
+    font-weight: bold;
+    position:relative; 
+    float: right;
+    top: -130px;
+    right: 3%;
+}
+
+.nv2 ul>li{
+    float:left; 
+    font-size: 11px;
+    margin-left: 10%; 
+    margin-top: 18px;
+}
+.nv2 ul li a{
+    display: inline-block;
+    padding: 2px;
+}
+
+.hd1{
+    color: hotpink;
+}
+
+.at1{
+    width:60%; height: 250px; 
+    float:left; 
+    position: relative; 
+    z-index: 3;
+    top:100px;
+    left:3%;
+}
+h2{
+    margin-left: 71%;
+}
+.td1>figure>img{
+    width:200px; height: 200px; 
+    border: 1px solid black;
+    display: inline-block; 
+    position: absolute; 
+    z-index: 6;
+    top:50px;
+    left:250px; 
+}
+.td2>figure>img{
+    width:200px; height: 200px;
+    border: 1px solid black;
+    display: inline-block; 
+    position: absolute; 
+    z-index: 6;
+    top:50px; 
+    left:460px; 
+}
+.td3>figure>img{ 
+    width:200px; height: 200px;
+    border: 1px solid black;
+    display: inline-block; 
+    position: absolute; 
+    z-index: 6;
+    top:50px; 
+    left:670px; 
+}
+.td4>figure>img{
+    width:200px; height: 200px;
+    border: 1px solid black;
+    display: inline-block; 
+    position: absolute; 
+    z-index: 6;
+    top:260px; 
+    left:250px; 
+}
+.td5>figure>img{
+    width:200px; height: 200px;
+    border: 1px solid black;
+    display: inline-block; 
+    position: absolute; 
+    z-index: 6;
+    top:260px; 
+    left:460px; 
+}
+.td6>figure>img{ 
+    width:200px; height: 200px;
+    border: 1px solid black;
+    display: inline-block; 
+    position: absolute; 
+    z-index: 6;
+    top:260px; 
+    left:670px; 
+}
+.td7>figure>img{ 
+    width:200px; height: 200px;
+    border: 1px solid black;
+    display: inline-block; 
+    position: absolute; 
+    z-index: 6;
+    top:470px; 
+    left:250px; 
+}
+.td8>figure>img{
+    width:200px; height: 200px;
+    border: 1px solid black;
+    display: inline-block; 
+    position: absolute; 
+    z-index: 6;
+    top:470px; 
+    left:460px; 
+}
+.td9>figure>img{ 
+    width:200px; height: 200px;
+    border: 1px solid black;
+    display: inline-block; 
+    position: absolute; 
+    z-index: 6;
+    top:470px; 
+    left:670px; 
+}
+/* hover */
+
+.td1>figure>img:hover{
+    box-shadow: 0 0 10px 10px hotpink;
+}
+.td2>figure>img:hover{
+    box-shadow: 0 0 10px 10px hotpink;
+}
+.td3>figure>img:hover{
+    box-shadow: 0 0 10px 10px hotpink;
+}
+.td4>figure>img:hover{
+    box-shadow: 0 0 10px 10px hotpink;
+}
+.td5>figure>img:hover{
+    box-shadow: 0 0 10px 10px hotpink;
+}
+.td6>figure>img:hover{
+    box-shadow: 0 0 10px 10px hotpink;
+}
+.td7>figure>img:hover{
+    box-shadow: 0 0 10px 10px hotpink;
+}
+.td8>figure>img:hover{
+    box-shadow: 0 0 10px 10px hotpink;
+}
+.td9>figure>img:hover{
+    box-shadow: 0 0 10px 10px hotpink;
+}
+/* 마감 */
+
+#dv1{
+    position: relative;
+    z-index: 8;
+    width:60%;
+    top:-150px;
+    left:130px;
+}
+
+.dv3{
+    padding-left: 280px;
+    top:2000px;
+}
+
+.nv2 ul>li{
+    float:left;
+	position:relative;
+	width:200px;
+	margin-top:5px;
+	margin-left:20px;
+    font-size: 11px;
+}
+
+.nv2 ul li a:hover{
+    font-weight: bold;
+    background-color: hotpink;
+    color: white;
+}
+
+.ft1{
+	clear:both;
+	border:1px solid black;
+    background:pink;
+    width: 1150px; 
+	height:90px;
+	margin:0 auto;
+	position:relative;
+	top:640px;
+	}
+
+.ft2>li>a{
+    margin: 440px;
+}
+
+.nv4{
+    position: relative;
+    top:40px;   
+}
+.nv4 ul{
+    list-style-type: none;
+}
+.nv4 ul>li{
+    float:left;
+    margin-left: 4%;
+    font-size: 11px;
+}
+
+.logo{
+    float: right;
+}
+
+.mini{
+    margin: 0 auto;
+    width: 400px;
+    margin-top: 10px;
+    margin-right: 280px;
+}
+.mini2>img{   
+    position: relative;
+    width: 40px;
+    height: 40px;
+    right: 50px;
+    bottom: 30px;
+}

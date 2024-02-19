@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6.switch구문(1).html</title>
+</head>
+<body>
+    <script>
+        /*
+            선택문=>다중 if문 대신사용
+            switch(조건식){
+              case 값1(숫자 이거나 문자열):=>변수나 식은 사용불가(X)
+                실행구문1;
+                break;
+              case 값2(숫자 이거나 문자열):
+                실행구문1;
+                break;
+                ,,,,
+              default:(생략가능)
+                처리구문
+            }
+        */
+       //Uncaught ReferenceError: su is not defined(su는 정의되지 않음) =>su변수를 선언하지 않고 사용할 경우에 발생한 에러메세지
+       //자바스크립트에서 변수를 선언하고 값을 저장시키지 않은 경우 에러발생->undefined(변수에 값이 없음)초기화X
+       let su=prompt("숫자를 입력하세요?");
+       /*
+        if(su%2==0)//if (su%2==1) 홀수
+                document.write(su+"은 짝수입니다."+"<br>");
+             else
+                document.write(su+"은 홀수입니다."+"<br>"); 
+        */
+       switch(su%2){ //조건식(변수의 값체크,수식,특정 문자열이거나(변수))
+          case 0://case 값 (띄어쓰기 주의)
+            document.write(su+"은 짝수입니다.<br>");
+            break; //원하는 다른 항목까지 처리가 된다.
+          case 1://case 값 (띄어쓰기 주의)
+            document.write(su+"은 홀수입니다.<br>");
+            break;
+       }
+       document.write("switch 구문 연습종료!!!<p>");
+        //추가 변수=(조건식)?참:거짓;
+        let su2=(su%2==0)?"짝수입니다.":"홀수입니다.";
+        document.write("su2=>"+su2);
+
+
+    </script>
+</body>
+</html>

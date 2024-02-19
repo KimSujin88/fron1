@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8.String예제.html</title>
+</head>
+<body>
+    <script>
+        //입력받은 문자열을 전달받아서 처리해주는 함수
+        function StringPrint(s){
+            //1.concat=>문자열 결합 +
+            document.write("s.concat('test')=>"+s.concat("test")+"<br>");
+            //2.substring(시작 인덱스번호O, 종료 인덱스번호-1(바로 앞번호까지))
+            document.write("s.substring(1,4)=>"+s.substring(1,4)+"<br>");//1~3까지의 특정문자열 뽑아내라
+            //3.시작 인덱스번호부터 문자열 끝까지
+            document.write("s.substring(1)=>"+s.substring(1)+"<br>");//ello
+            //4.toUpperCase()대문자로 변환<->toLowerCase() 소문자로 변환
+            document.write("s.toUpperCase()=>"+s.toUpperCase()+"<br>");
+            //5.특정문자열을 변경->replace(변경전단어,변경후 단어)
+            document.write("s.replace('l','t')=>"+s.replace('l','t')+"<br>");
+            //6.문자열의 길이는 구하는 경우 =>문자열.length=>속성명  자바(문자열.length())
+            document.write("s.length=>"+s.length+"<br>");
+            //7.문자열중에서 특정위치에 있는 문자출력=>charAt(인덱스번호)
+            document.write("s.charAt(2)=>"+s.charAt(2)+"<br>");//l  hello 2번째값만 뽑아냄
+            //8.특정문자가 몇번째 인덱스번호에 위치? indexOf('찾는 문자')=인덱스번호
+            document.write("s.indexOf('l')=>"+s.indexOf('l')+"<br>");//2.앞에서 검색해서 처음 찾은 번호 리턴 (2번째l만 리턴)
+            //9.뒤에서 찾는 경우 ->lastIndexOf('찾는 문자')->뒤에서 찾지만 인덱스번호는 앞에서 계산
+            document.write("s.lastIndexOf('l')=>"+s.lastIndexOf('l')+"<br>");
+            //10.공백제거 ->trim()=> "abcd    "=>"abcd"=>공백도 문자열길이 포함
+            document.write("s.trim()=>"+s.trim()+"<br>");
+            //11.split메서드 특정구분자를 이용해서 분리시키는 메서드
+            document.write("s.split(',')=>"+s.split(",")+"<br>");
+            let t=s.split(",");//배열형태로 분리시켜서 저장
+            for(let i=0;i<t.length;i++)
+              document.write("t=>"+t[i]+"<br>");
+        }
+
+        let input=prompt("아무 문자열이나 입력하세요!");
+        StringPrint(input);//문자열 전달//
+    </script>
+</body>
+</html>

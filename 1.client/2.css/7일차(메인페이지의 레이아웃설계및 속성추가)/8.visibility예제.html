@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visilbilty예제(display:none)</title>
+    <style>
+        /*
+            공통점:둘다 화면에 안보임.
+            visibility 속성=>해당 영역이 보이지 않을뿐 화면에 그대로 빈공간으로 유지
+            visibility:hidden<->visible
+            display:none;
+            display속성은 영역 자체까지 사라지기 때문에 인접한 요소의 레이아웃에 영향을 미칠수 있다.
+        */
+        div{
+           width: 100px;
+           height: 100px;
+           background: yellow;
+           border: 1px solid black; 
+           float: left; /* 왼쪽->오른쪽으로 배치 */
+           margin: 5px; /* 바깥여백 */
+           text-align: center; /* 가로 */
+           /*vertical-align: middle; 세로 적용이 안돼서*/
+           padding-left: 75px;
+           padding-top: 60px; /* 안쪽상단 여백을 줘서 가운데로 배치 */
+        }
+        /*.square.sq12{display:none;} 복수 선택자일땐는 . 점을 두개 찍음
+                            영역 자체가 없어진다.*/
+        .square.sq12{visibility: hidden;} /* 공간(영역)은 존재하는데 화면에만 안보임 */
+
+    </style>
+</head>
+<body><!--div.square.sq1$*3-->
+    <div class="square sq11">A</div>
+    <div class="square sq12">B</div>
+    <div class="square sq13">C</div>
+</body>
+</html>
